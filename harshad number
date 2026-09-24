@@ -1,0 +1,21 @@
+proc har {num} {
+ set temp 0
+ set div $num
+ while {$num>0} {
+        set digit [expr {$num % 10}]
+        set temp [expr {$temp+$digit}]
+        set num [expr {$num / 10}]
+
+    }
+    puts $temp
+    puts $div
+    if {$div%$temp == 0} {
+        puts "$div is a harshad "
+    } else {
+          puts "$div is not a harshad "
+    }
+    }
+ 
+
+
+har 18
