@@ -1,0 +1,11 @@
+proc sum {num} {
+    set temp 0
+    while {$num > 0} {
+        set digit   [expr {$num % 10}]
+        set temp [expr {$temp  + $digit}]
+        set num     [expr {$num / 10}]
+    }
+    puts $temp
+}
+
+sum 125
