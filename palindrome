@@ -1,0 +1,16 @@
+proc sum {num} {
+    set arm $num
+    set temp 0
+    while {$num > 0} {
+        set digit   [expr {$num % 10}]
+        set temp [expr { ($temp * 10 )  +   $digit}]
+        set num     [expr {$num / 10}]
+    }
+    if {$arm == $temp} {
+        puts "$arm is a palindrome"
+    } else {
+        puts "$arm is not a palindrome number "
+    }
+}
+
+sum 151
