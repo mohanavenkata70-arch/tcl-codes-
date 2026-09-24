@@ -1,0 +1,11 @@
+proc rev {num} {
+    set reverse 0
+    while {$num > 0} {
+        set digit   [expr {$num % 10}]
+        set reverse [expr {($reverse * 10) + $digit}]
+        set num     [expr {$num / 10}]
+    }
+    puts $reverse
+}
+
+rev 125
