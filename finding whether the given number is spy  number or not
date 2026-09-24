@@ -1,0 +1,14 @@
+set n [gets stdin]
+set temp1 0
+set temp2 1
+set temp $n
+while {$n > 0} {
+    set digit [expr {$n % 10}]
+    set temp1 [expr {$temp1  + $digit }]
+    set temp2 [expr {$temp2  * $digit}]
+    set n [expr {$n / 10}]
+       
+}
+if {$temp1== $temp2} {
+       puts " $temp  is a spy number " 
+    }
