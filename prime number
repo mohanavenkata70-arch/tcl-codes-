@@ -1,0 +1,15 @@
+set i [gets stdin]
+if {$i<=1} {
+    puts "$i is not a prime"
+    break
+}
+for {set j 2} {$j < $i} {incr $j} {
+    if {$i%$j==0} {
+        puts "$i is not a prime number "
+        break
+
+    } else {
+        puts "$i is a prime number "
+        break
+    }
+}
