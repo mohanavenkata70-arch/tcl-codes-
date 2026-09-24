@@ -1,0 +1,10 @@
+proc fact {num} {
+    set result 1
+    while {$num > 0} {
+        set result [expr {$result * $num}]
+        set num    [expr {$num - 1}]
+    }
+    puts $result
+}
+
+fact 5
