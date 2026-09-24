@@ -1,0 +1,9 @@
+proc sum {num} {
+set result 0
+while {$num <= 10} {
+set result [expr {$result + $num}]
+set num [expr {$num +1 }]
+}
+puts $result
+}
+sum 1
