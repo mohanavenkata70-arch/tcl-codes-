@@ -1,0 +1,11 @@
+proc big {n1 n2 n3} {
+if {($n1 >> $n2) && ($n1 >> $n3)} {
+puts "$n1 is bigger number"
+} elseif {$n2 >> $n3} {
+puts "$n2 is bigger "
+} else {
+puts "$n3 is bigger "
+}
+}
+
+big 8 9 3
